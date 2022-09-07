@@ -1,0 +1,85 @@
+ #include<stdio.h>
+int main()
+{
+    int e,a,b,c,d = 0,i;
+    /*
+    b to take input of code of product
+    a to take input of number of quantity of products
+    c to take input of quantity of specific product
+    i to execute the loop
+    d = value of that product
+    e
+    */
+    printf("(Don't consider repeated products)\n");
+    printf("Enter the number of quantity of product:-");
+    scanf("%d",&a);
+    printf("Following are codes for product\n");
+    printf("Code for candy is 1\n");
+    printf("Code for pen is 2\n");
+    printf("Code for pencil is 3\n");
+    printf("Code for notebook is 4\n");
+    printf("Code for compass is 5\n");
+    printf("Code for diary is 6\n");
+    printf("Code for bottle is 7\n");
+    printf("Code for graph paper is 8\n");
+    printf("Code for biscuits is 9\n");
+    e=0;
+    for(i=1;i<=a;i++)
+    {
+        printf("\nEnter the product code:-");
+        scanf("%d",&b);
+        printf("\nEnter the quantity of this product:-");
+        scanf("%d",&c);
+        if(b==1)
+        {
+            d=1;
+            printf("Purchased %d candy/candies successfully",c);
+            }
+        else if(b==2)
+                    {
+                        d=5;
+                        printf("Purchased %d pen/pens successfully",c);
+                        }
+                        else if(b==3)
+                    {
+                        d=2;
+                        printf("Purchased %d pencil/pencils successfully",c);
+                        }
+                        else if(b==4)
+                    {
+                        d=20;
+                        printf("Purchased %d notebook/notebooks successfully",c);
+                        }
+                        else if(b==5)
+                    {
+                        d=100;
+                        printf("Purchased %d compass successfully",c);
+                        }
+                                        else if(b==6)
+                    {
+                        d=50;
+                        printf("Purchased %d diary/diaries successfully",c);
+                        }
+                                        else if(b==7)
+                    {
+                        d=40;
+                        printf("Purchased %d bottle/bottles successfully",c);
+                        }
+                                        else if(b==8)
+                    {
+                        d=5;
+                        printf("Purchased %d graphpaper/graphpapers successfully",c);
+                        }
+                                        else if(b==9)
+                    {
+                        d=20;
+                        printf("Purchased %d biscuit packet/biscuit packets successfully",c);
+                        }
+                        e+=d*c;
+                }
+                printf("\nTotal Bill is Rs:%d\n",e);
+    printf("Thank You for Shopping\n");
+            return 0;
+        }
+
+
